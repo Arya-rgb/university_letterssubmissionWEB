@@ -38,6 +38,7 @@ class Ajuan extends CI_Controller {
         
     }
     function login_aksi(){
+        
         $username = $this->input->post('username');
 		$password = $this->input->post('password');
 		$where = array(
@@ -53,15 +54,19 @@ class Ajuan extends CI_Controller {
 				);
  
 			$this->session->set_userdata($data_session);
- 
-			redirect(base_url("index.php/admin"));
+            $data['ajuan_surat'] = $this->m_data->ambil_data()->result();
+            $this->load->view('admin_page',$data);
+
+			//redirect(base_url("index.php/admin"));
  
 		}else{
 			echo "Username dan password salah !";
-		}
+        }
+        
     }
     function logout(){
 		$this->session->sess_destroy();
         redirect(base_url('index.php/ajuan/index'));
     }
+    
 }
