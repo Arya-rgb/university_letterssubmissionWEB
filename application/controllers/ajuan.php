@@ -68,5 +68,36 @@ class Ajuan extends CI_Controller {
 		$this->session->sess_destroy();
         redirect(base_url('index.php/ajuan/index'));
     }
-    
+    function proses($id){
+        $where = array('id' => $id);
+        $data['ajuan_surat'] = $this->m_data->proses_data($where,'ajuan_surat')->result();
+        $this->load->view('v_proses',$data);
+    }
+    function proses_action(){
+    $id = $this->input->post('id');
+	$nama = $this->input->post('nama');
+	$nim = $this->input->post('nim');
+    $email = $this->input->post('email');
+    $kat_surat = $this->input->post('kat_surat');
+    $jenis_surat = $this->input->post('jenis_surat');
+    $status_surat = $this->input->post('status_surat');
+    $link_surat = $this->input->post('link_surat');
+ 
+	$data = array(
+        'nama' => $nama,
+        'nim' => $nim,
+        'email' => $email,
+        'kat_surat' => $kat_surat,
+        'jenis_surat' => $jenis_surat,
+        'status_surat' => $status_surat,
+        'link_surat' => $link_surat
+	);
+ 
+	$where = array(
+		'id' => $id
+	);
+ 
+	$this->m_data->proses_update($where,$data,'ajuan_surat');
+	redirect('ajuan/login_admin');
+    }
 }

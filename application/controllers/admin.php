@@ -9,7 +9,7 @@ class Admin extends CI_Controller{
 			redirect(base_url("index.php/ajuan"));
 		}
 	}
- 
+	
 	function index(){
 		$this->load->view('admin_page');
 	}

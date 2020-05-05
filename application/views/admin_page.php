@@ -17,8 +17,11 @@
 <th>Nama</th>
 <th>Nim</th>
 <th>Email</th>
-<th>Keterangan Surat</th>
 <th>Jenis Surat</th>
+<th>Keterangan Surat</th>
+<th>Status Surat</th>
+<th>Link Download</th>
+<th>Aksi</th>
 </tr>
 	<?php
 $no = 1;
@@ -31,8 +34,10 @@ foreach($ajuan_surat as $a) {
 		<td><?php echo $a->email?></td>
 		<td><?php echo $a->kat_surat?></td>
 		<td><?php echo $a->jenis_surat?></td>
+		<td><?php echo $a->status_surat?></td>
+		<td><?php echo $a->link_surat?></td>
 		<td>
-		<?php echo anchor('ajuan/edit/'.$a->id,'Proses'); ?>
+		<?php echo anchor('ajuan/proses/'.$a->id,'Proses'); ?>
         <?php echo anchor('ajuan/hapus/'.$a->id,'Hapus'); ?>
 		</td>
 	</tr>
