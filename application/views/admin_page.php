@@ -35,7 +35,7 @@ foreach($ajuan_surat as $a) {
 		<td><?php echo $a->kat_surat?></td>
 		<td><?php echo $a->jenis_surat?></td>
 		<td><?php echo $a->status_surat?></td>
-		<td><?php echo $a->link_surat?></td>
+		<td><a href='https://<?php echo $a->link_surat?>'>Download</a></td>
 		<td>
 		<?php echo anchor('ajuan/proses/'.$a->id,'Proses'); ?>
         <?php echo anchor('ajuan/hapus/'.$a->id,'Hapus'); ?>
