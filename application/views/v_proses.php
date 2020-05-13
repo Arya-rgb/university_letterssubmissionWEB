@@ -36,11 +36,11 @@
             </tr>
             <tr>
 				<td>Status Surat</td>
-				<td><input type="text" name="status_surat" value="<?php echo $a->status_surat?>"></td>
+				<td><input type="text" name="status_surat" value="<?php echo $a->status_surat?>" required></td>
             </tr>
             <tr>
 				<td>Tambahkan Link Download</td>
-				<td><input type="text" name="link_surat" value="<?php echo $a->link_surat?>"></td>
+				<td><input type="text" name="link_surat" value="<?php echo $a->link_surat?>" required></td>
 			</tr>
 			<tr>
 				<td></td>

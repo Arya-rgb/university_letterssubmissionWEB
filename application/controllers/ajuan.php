@@ -100,4 +100,9 @@ class Ajuan extends CI_Controller {
 	$this->m_data->proses_update($where,$data,'ajuan_surat');
 	redirect('ajuan/login_admin');
     }
+    function hapus($id) {
+        $where = array('id' => $id);
+        $this->m_data->hapus_data($where,'ajuan_surat');
+        redirect('ajuan/login_admin');
+    }
 }
