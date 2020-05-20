@@ -43,7 +43,7 @@ class Ajuan extends CI_Controller {
 		$password = $this->input->post('password');
 		$where = array(
 			'username' => $username,
-			'password' => md5($password)
+			'password' => MD5($password)
 			);
 		$cek = $this->m_data->cek_login("layanan_akademik",$where)->num_rows();
 		if($cek > 0){
@@ -104,5 +104,9 @@ class Ajuan extends CI_Controller {
         $where = array('id' => $id);
         $this->m_data->hapus_data($where,'ajuan_surat');
         redirect('ajuan/login_admin');
+    }
+    function status_surats() {
+        $data['ajuan_surat'] = $this->m_data->ambil_data()->result();
+        $this->load->view('status_surat',$data);
     }
 }
