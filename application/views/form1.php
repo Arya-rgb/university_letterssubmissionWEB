@@ -51,8 +51,8 @@ $(document).ready(function()
 <div id="PanelMenu1_markup">
 <ul role="menu">
    <li role="menuitem"><a href="http://localhost/miniproject/index.php/ajuan/index"><i class="fa fa-home fa-fw"></i><span>Home</span></a></li>
-   <li role="menuitem"><a href="#"><i class="fa fa-check-circle fa-fw"></i><span>Status Surat</span></a></li>
-   <li role="menuitem"><a href="#"><i class="fa fa-download fa-fw"></i><span>Download Surat</span></a></li>
+   <li role="menuitem"><a href="http://localhost/miniproject/index.php/ajuan/status_surats"><i class="fa fa-check-circle fa-fw"></i><span>Status Surat</span></a></li>
+   <li role="menuitem"><a href="http://localhost/miniproject/index.php/ajuan/status_surats"><i class="fa fa-download fa-fw"></i><span>Download Surat</span></a></li>
    <li role="menuitem"><a href="http://www.stmik-bandung.ac.id/ais/"><i class="fa fa-pencil fa-fw"></i><span>AIS Online</span></a></li>
 </ul>
 </div>
