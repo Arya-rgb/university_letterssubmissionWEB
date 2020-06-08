@@ -13,7 +13,7 @@
     font-family: sans-serif;
     color: #444;
     border-collapse: collapse;
-    width: 50%;
+    width: 100%;
     border: 1px solid #f2f5f7;
 }
  
@@ -60,7 +60,7 @@ foreach($ajuan_surat as $a) {
 		<td><?php echo $a->email?></td>
 		<td><?php echo $a->kat_surat?></td>
 		<td><?php echo $a->jenis_surat?></td>
-		<td><input value="<?php echo $a->status_surat?>" placeholder="Belum" readonly/></td>
+		<td><input value="<?php echo $a->status_surat?>" placeholder="Belum Tersedia" readonly/></td>
 		<td><a href='https://<?php echo $a->link_surat?>'>Download</a></td>		
 	</tr>
 <?php } ?>

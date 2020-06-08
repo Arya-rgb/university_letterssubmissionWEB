@@ -109,4 +109,7 @@ class Ajuan extends CI_Controller {
         $data['ajuan_surat'] = $this->m_data->ambil_data()->result();
         $this->load->view('status_surat',$data);
     }
+    function showform() {
+        $this->load->view('formulir');
+    }
 }

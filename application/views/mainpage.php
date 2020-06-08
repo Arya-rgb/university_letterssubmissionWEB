@@ -114,8 +114,13 @@
       }
                        );
     </script>
+    <script type="text/javascript">
+            function zoom() {
+              document.body.style.zoom = "150%"
+            }
+    </script>
   </head>
-  <body>
+  <body onload="zoom()">
     <div id="wb_LayoutGrid3">
       <div id="LayoutGrid3">
         <div class="row">
@@ -206,7 +211,7 @@
             <div id="wb_service1">
               <span style="color:#FFFFFF;font-family:Arial;font-size:19px;">
                 <strong>
-                  <a href="http://localhost/miniproject/index.php/ajuan/form1" title="News title">Ajukan Surat
+                  <a href="http://localhost/miniproject/index.php/ajuan/form1" title="Mengajukan surat">Ajukan Surat
                   </a>
                 </strong>
               </span>
@@ -220,7 +225,7 @@
             <div id="wb_service2">
               <span style="color:#FFFFFF;font-family:Arial;font-size:19px;">
                 <strong>
-                <a href="http://localhost/miniproject/index.php/ajuan/status_surats" title="News title">Status Surat
+                <a href="http://localhost/miniproject/index.php/ajuan/status_surats" title="Mencek Status surat">Status Surat
                   </a>
                 </strong>
               </span>
@@ -237,7 +242,9 @@
           <div class="col-3">
             <div id="wb_service3">
               <span style="color:#FFFFFF;font-family:Arial;font-size:19px;">
-                <strong>Unduh Formulir
+                <strong>
+                <a href="http://localhost/miniproject/index.php/ajuan/showform" title="Download Formulir">Download Formulir
+                  </a>
                 </strong>
               </span>
               <span style="color:#FFFFFF;font-family:Arial;font-size:13px;">
