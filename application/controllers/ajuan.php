@@ -60,7 +60,7 @@ class Ajuan extends CI_Controller {
 			//redirect(base_url("index.php/admin"));
  
 		}else{
-			echo "Username dan password salah !";
+			echo redirect(base_url("index.php/ajuan/index"));;
         }
         
     }

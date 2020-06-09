@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/Untitled18.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/selamat1.css'); ?>">
   </head>
-  <body>
+  <script type="text/javascript">
+            function zoom2() {
+              document.body.style.zoom = "125%"
+            }
+    </script>
+  <body onload="zoom2()">
     <div id="wb_LayoutGrid4">
       <div id="LayoutGrid4">
         <div class="row">
@@ -37,7 +42,9 @@
               <div id="Shape2">
                 <div id="Shape2_text">
                   <span style="color:#FFFFFF;font-family:Arial;font-size:15px;">
-                    <strong>Menu Utama
+                    <strong>
+                    <a href="http://localhost/miniproject/index.php/ajuan/status_surats">Cek Status
+                      </a>
                     </strong>
                   </span>
                 </div>
