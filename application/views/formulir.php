@@ -94,7 +94,7 @@
                                  <div id="wb_projectText1">
                                     <span style="color:#000000;font-family:Arial;font-size:15px;line-height:18px;"><strong>FORMULIR PAS FOTO DAN TANDA TANGAN </strong><br>Anda dapat menggunakan formulir ini untuk kebutuhan administrasi pengumpulan data mahasiswa berupa pas foto dan tanda tangan, silahkan downlaod dan print formulir ini.<br><br><strong>Note:</strong><br>Isi data dengan benar agar dapat mudah di proses nantinya. lanjut nomer 2 untuk formulir selanjutnya.</span>
                                  </div>
-                                 <input type="button" id="projectButton1" name="" value="Download" style="display:inline-block;width:156px;height:37px;z-index:6;">
+                                 <input type="button" class="button" onclick="location.href='https://drive.google.com/file/d/1WERjAVBKtKT4jWTGAexN9a_pzerifRxA/view?usp=sharing';" id="projectButton1" class="button1" name="" value="Download" style="display:inline-block;width:156px;height:37px;z-index:6;">
                               </div>
                            </div>
                            <div class="item">
@@ -102,7 +102,7 @@
                                  <div id="wb_projectText2">
                                     <span style="color:#000000;font-family:Arial;font-size:15px;line-height:18px;"><strong>FORMULIR DATA PRIBADI MAHASISWA<br></strong>Anda dapat menggunakan formulir ini untuk kebutuhan administrasi pengumpulan data pribadi mahasiswa yang di butuhkan instansi, silahkan downlaod dan print formulir ini.<br><br><br></span>
                                  </div>
-                                 <input type="button" id="projectButton2" name="" value="Download" style="display:inline-block;width:156px;height:37px;z-index:8;">
+                                 <input type="button" class="button" onclick="location.href='https://drive.google.com/file/d/1bdjDUEpKtvYWcXLvsClSbZLCY8GgiRYg/view?usp=sharing';" id="projectButton2" name="" value="Download" class="button1" style="display:inline-block;width:156px;height:37px;z-index:8;">
                               </div>
                            </div>
                            <div class="item">
@@ -110,7 +110,7 @@
                                  <div id="wb_projectText3">
                                     <span style="color:#000000;font-family:Arial;font-size:15px;line-height:18px;"><strong>FORMULIR REGISTRASI MATA KULIAH<br></strong>Anda dapat menggunakan formulir ini untuk kebutuhan administrasi pengumpulan data registrasi mata kuliah yang akan di proses oleh prodi, silahkan downlaod dan print formulir ini.<br><br><br></span>
                                  </div>
-                                 <input type="button" id="projectButtton3" name="" value="Download" style="display:inline-block;width:156px;height:37px;z-index:10;">
+                                 <input type="button" class="button" onclick="location.href='https://drive.google.com/file/d/1uuAQhLiw8GpwyAghaNFqKvljQ0DmDrgG/view?usp=sharing';" id="projectButtton3" name="" value="Download" style="display:inline-block;width:156px;height:37px;z-index:10;">
                               </div>
                            </div>
                            <div class="item">
@@ -118,7 +118,7 @@
                                  <div id="wb_projectText4">
                                     <span style="color:#000000;font-family:Arial;font-size:15px;line-height:18px;"><strong>FORMULIR PENDAFTARAN MAHASISWA BARU <br></strong>Anda dapat menggunakan formulir ini untuk kebutuhan administrasi pengumpulan data mahasiswa baru angkatan 2020, silahkan ikuti tautan di bawah ini untuk mengisi dan info lebih lanjut<br><br><br></span>
                                  </div>
-                                 <input type="button" id="projectButton4" name="" value="PMB 2020" style="display:inline-block;width:156px;height:37px;z-index:12;">
+                                 <input type="button" class="button" onclick="location.href='http://www.stmik-bandung.ac.id/pmbonline';" id="projectButton4" name="" value="PMB 2020" style="display:inline-block;width:156px;height:37px;z-index:12;">
                               </div>
                            </div>
                         </div>
@@ -132,12 +132,12 @@
          <div id="LayoutGrid2">
             <div class="row">
                <div class="col-1">
-                  <div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:26;">
+                  <div id="wb_Image1" style="display:inline-block;width:212px;height:167px;z-index:26;">
                      <a href="#" onclick="$('#projectCarousel1').bootstrapcarousel(0);return false;"><img src=<?php echo base_url('assets/images/Capture.PNG'); ?> id="Image1" alt=""></a>
                   </div>
                </div>
                <div class="col-2">
-                  <div id="wb_Image2" style="display:inline-block;width:212px;height:169px;z-index:27;">
+                  <div id="wb_Image2" style="display:inline-block;width:212px;height:167px;z-index:27;">
                      <a href="#" onclick="$('#projectCarousel1').bootstrapcarousel(1);return false;"><img src=<?php echo base_url('assets/images/2.PNG'); ?> id="Image2" alt=""></a>
                   </div>
                </div>

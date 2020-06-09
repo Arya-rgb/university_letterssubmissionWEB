@@ -1,6 +1,5 @@
 body
 {
-   background-color: #FFFFFF;
    color: #000000;
    font-family: Arial;
    font-weight: normal;
@@ -8,6 +7,7 @@ body
    line-height: 1.1875;
    margin: 0;
    padding: 0;
+   background-color: #ffffff;
 }
 #wb_projectCarouselGrid
 {
@@ -61,7 +61,7 @@ body
 {
    background-color: transparent;
    background-image: none;
-   border: 0px solid #FFFFFF;
+   border: 3px solid rgb(0, 0, 0);
    width: 50%;
    text-align: left;
 }
@@ -193,11 +193,11 @@ body
    text-indent: -999px;
    background-repeat: no-repeat;
    background-position: center center;
-   background-image: url(images/page_default.png);
+   background-image: url(assets/images/page_default.png);
 }
 #projectCarousel1 .carousel-indicators .active
 {
-   background-image: url(images/page_active.png);
+   background-image: url(assets/images/page_active.png);
 }
 #projectCarousel1 .frame
 {
@@ -849,3 +849,22 @@ body
    height: 348px;
    vertical-align: top;
 }
+
+.button {
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   transition: all 0.5s;
+   cursor: pointer;
+ }
+ 
+ .button span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
+ }
+ 
+ 
+ 
+
