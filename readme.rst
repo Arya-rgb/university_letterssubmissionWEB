@@ -1,3 +1,1 @@
-DICKY ARYA PRATAMA TAMFAN GAGAH BERANI :), TERIMA PROJECT WEB LANGSUNG AJA DM IG @ahmaddicky17 UNTUK LEBIH LANJUT..
-
-SALAM ANAK KOS :V 
+with this website you as a student can submit a letter to the university.
